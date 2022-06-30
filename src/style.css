@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap');
+
+/*=====================================================index*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+
+.body{
+	display: grid;
+	display: flex;
+	flex-direction: column;
+	grid-template-columns: 1fr;
+	grid-template-rows: 20px 20px 30px 20px 10px;
+	grid-template-areas:
+	 "numero" "logo" "nav" "img" "texto" "pie" "autor";
+}
+
+/*---------------------------------------numero*/
+.cel{
+	grid-area: "numero";
+	display: flex;
+	justify-content: center;
+	background-color: #000;
+	color: white;
+	font-family: Open Sans, sans-serif;
+	font-size: 1.5rem;
+}
+ /*----------------------------------logo, search*/
+.div__logo{
+	grid-area: "logo";
+}
+.logo{
+	display: flex;
+	padding-left: 15px;
+	padding-top: 10px
+
+}
+
+.search{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	align-content: center;
+}
+
+/*--------------------------------------nav*/
+
+.nav{
+	grid-area: "nav";
+	background-color: pink;
+	font-family: Open Sans, sans-serif;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_list_item {
+	list-style: none;
+    padding: 3px;
+    color: #EBB9DB;
+    font-size: 1.9rem;
+    color: black;
+}
+
+.nav_list_item a {
+	text-decoration: none;
+}
+
+.nav_list_item a:link, a:visited {
+	text-decoration: none;
+	color: initial;
+}
+
+.nav_list_item a:hover {
+	color: rgb(202, 14, 76);
+
+}
+
+.transform_nav:hover{
+	transform: scaleX(0.9);
+	transform: scaleY(0.9);
+}
+
+
+
+/*-------------------------------------imagen*/
+.main_div1{
+	grid-area: "img";
+	display: flex;
+	justify-content: center;
+}
+
+.main_div1_img{
+	justify-content: center;
+	padding: 20px;
+}
+
+/*----------------------------h1*/
+
+.main_div2{
+	grid-area: "texto";
+}
+
+.main_div2_h1{
+	font-family: Open Sans, sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	color: black;
+}
+span{
+	color: pink;
+}
+/*----------------------------------maps*/
+
+.main_div2_maps{
+	display: flex;
+	justify-content: center;
+	padding:20px 20px;
+}
+
+/*-------------------------------------pie*/
+.footer_div1{
+	grid-area: "pie";
+	background-color: pink;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.footer__img{
+	display: flex;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	justify-content: flex-end;
+}
+
+/*-----------------------autor*/
+.footer_div2{
+	grid-area: "autor";
+}
+
+.div2_p{
+	text-align: center;
+	background-color:#E1C9DE;
+	font-size: 1.9rem;
+	color: black;
+	font-family: verdana;
+}
+
+
+
+
+
+
+
+
+
+/*=================================================productos*/
+
+
+.products--h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.products__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, max(300px));
+	grid-template-rows: repeat(2, fr);
+	column-gap: 20px;
+	row-gap: 20px;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.products__gallery__container {
+	display: flex;
+}
+
+.transform_gallery:hover{
+	cursor: pointer;
+	transform: scaleX(0.9);
+	transform: scaleY(0.9);
+}
+
+.products__gallery__container--img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+
+/*=========================================promo*/
+
+.div_img_promo{
+	display: flex;
+	justify-content: center;
+
+}
+
+
+
+
